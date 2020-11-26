@@ -1,10 +1,15 @@
 import React from 'react';
+import './videoCard.css';
 
 
 class VideoCard extends React.Component{
     render(){
         return(
-            <div> Video card </div>
+            <div className = 'video-card'>
+            <img src={this.props.video.snippet.thumbnails.medium.url} alt=""/>
+            {this.props.video.snippet.title}
+            
+            </div>
         )
     }
 }
