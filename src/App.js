@@ -1,5 +1,8 @@
 import React from 'react'
+import './app.css';
 import Search from './components/Search';
+import VideoItems from './components/VideoItems';
+import VideoDetails from './components/VideoDetails';
 
 
 class App extends React.Component {
@@ -11,6 +14,10 @@ class App extends React.Component {
     return (
       <div className="App">
         <Search onSubmit = {this.onSubmit}/>
+        <div className='content-body'>
+          <VideoDetails/>
+          <VideoItems/>
+        </div>
       </div>
     );
   }
