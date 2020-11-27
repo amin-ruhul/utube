@@ -1,0 +1,15 @@
+.search{
+    margin: 20px 0px 20px 20px;
+}
+
+input{
+    width: 58%;
+    height: 30px;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 5px;
+    outline: none;
+}
+::placeholder{
+    opacity: 0.5;
+}

@@ -1,4 +1,5 @@
 import React from 'react';
+import './search.css';
 
 class Search extends React.Component{
 
@@ -16,9 +17,10 @@ class Search extends React.Component{
 
     render(){
         return(
-            <div>
+            <div className='search'>
                 <form action="" onSubmit={this.handelSubmit}>
                     <input 
+                    placeholder="Enter term to find video"
                     onChange = {this.handelChange}
                     type="text"/>
                 </form>

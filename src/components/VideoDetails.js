@@ -1,4 +1,5 @@
 import React from 'react';
+import './videoDetail.css';
 
 class VideoDetails extends React.Component{
 
@@ -10,11 +11,11 @@ class VideoDetails extends React.Component{
         }
         const videoSrc = `https://www.youtube.com/embed/${this.props.selectedVideo.id.videoId}`;
         return(
-            <div>
-                <div>
+            <div className='container'>
+                <div className='video-player'>
                     <iframe src={videoSrc} title='video player'/>
                 </div>
-                <div>
+                <div className='video-detail'>
                     <h4>{this.props.selectedVideo.snippet.title}</h4>
                     <p>{this.props.selectedVideo.snippet.description}</p>
                 </div>

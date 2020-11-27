@@ -1,0 +1,23 @@
+.container{
+    
+    
+}
+
+iframe{
+    width: 680px;
+    height: 430px;
+}
+
+.video-player{
+    margin-left: 20px;
+}
+.video-detail{
+    margin-left: 20px;
+    margin-right: 55px;
+}
+
+h4{
+    font-size: 16px;
+    margin-top: 3px;
+    margin-bottom: 10px;
+}
