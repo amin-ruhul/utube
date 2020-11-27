@@ -5,7 +5,7 @@ class VideoItems extends React.Component{
 
     render(){
     const listOfVideo = this.props.videos.map(video=>{
-            return <VideoCard video = {video} onVideoSelect = {this.props.onVideoSelect}/>
+            return <VideoCard key={video.id.videoId} video = {video} onVideoSelect = {this.props.onVideoSelect}/>
         })
 
         return <div>{listOfVideo}</div>
