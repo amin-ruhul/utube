@@ -2,14 +2,20 @@ import React from 'react';
 
 class VideoDetails extends React.Component{
 
+    
     render(){
+        console.log(this.props.selectedVideo);
+        if(!this.props.selectedVideo){
+            return <div>loading..</div>
+        }
+
         return(
             <div>
                 <div>
-                    video player
+                <img src={this.props.selectedVideo.snippet.thumbnails.medium.url} alt=""/>
                 </div>
                 <div>
-                    video title
+                {this.props.selectedVideo.snippet.title}
                 </div>
             </div>
         )
